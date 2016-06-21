@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Enrique Calot
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Cloodie Keystroke Dynamics Demo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-11 17:43-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: advanced.inc.php:8 standard.inc.php:6
+msgid "Demo de Keystroke Dynamics por Cloodie"
+msgstr ""
+
+#: advanced.inc.php:10 standard.inc.php:8
+msgid "This demonstration validates if the person is who he says he is"
+msgstr ""
+
+#: advanced.inc.php:14 location.inc.php:56 profile.inc.php:25
+msgid "User"
+msgstr ""
+
+#: advanced.inc.php:20 location.inc.php:62 profile.inc.php:31
+#: standard.inc.php:18
+msgid "Password"
+msgstr ""
+
+#: advanced.inc.php:24 location.inc.php:66 profile.inc.php:35
+msgid "Show Password"
+msgstr ""
+
+#: advanced.inc.php:28
+msgid "Use mode"
+msgstr ""
+
+#: advanced.inc.php:31
+msgid "Te recomendamos usar el modo run"
+msgstr ""
+
+#: advanced.inc.php:36
+msgid "Ejecutar"
+msgstr ""
+
+#: advanced.inc.php:69 profile.inc.php:117 standard.inc.php:114
+msgid "Advanced Information"
+msgstr ""
+
+#: advanced.inc.php:72 profile.inc.php:120 standard.inc.php:117
+msgid "Mostrar Entrenamiento"
+msgstr ""
+
+#: location.inc.php:14
+msgid "Demo de API de Keystroke Dynamics"
+msgstr ""
+
+#: location.inc.php:16
+msgid "According to the keystroke dynamics..."
+msgstr ""
+
+#: location.inc.php:28 location.inc.php:39
+msgid "Free text"
+msgstr ""
+
+#: location.inc.php:29
+msgid "Login Form"
+msgstr ""
+
+#: location.inc.php:30
+msgid "Other Form"
+msgstr ""
+
+#: location.inc.php:31
+msgid "Captcha"
+msgstr ""
+
+#: location.inc.php:46
+msgid "Probar resultados"
+msgstr ""
+
+#: location.inc.php:79
+msgid "This place is available for custom forms your company wants to add."
+msgstr ""
+
+#: location.inc.php:82
+msgid "Comming soon: Solve the captcha!"
+msgstr ""
+
+#: location.inc.php:104
+msgid "Cadencia"
+msgstr ""
+
+#: location.inc.php:107
+msgid "Simulando prueba..."
+msgstr ""
+
+#: location.inc.php:108
+msgid "Simulando ingreso..."
+msgstr ""
+
+#: location.inc.php:116
+msgid "Probar Resultados"
+msgstr ""
+
+#: location.inc.php:117 standard.inc.php:88
+msgid "Ingresar"
+msgstr ""
+
+#: location.inc.php:173
+msgid "Enter value"
+msgstr ""
+
+#: location.inc.php:207
+msgid "Dimension"
+msgstr ""
+
+#: location.inc.php:207 location.inc.php:245
+msgid "Value"
+msgstr ""
+
+#: location.inc.php:245
+msgid "Attribute"
+msgstr ""
+
+#: location.inc.php:310
+msgid "Geo location support"
+msgstr ""
+
+#: location.inc.php:310
+msgid "Not available"
+msgstr ""
+
+#: location.inc.php:317
+msgid "Browser"
+msgstr ""
+
+#: location.inc.php:318
+msgid "Version"
+msgstr ""
+
+#: location.inc.php:319
+msgid "Device"
+msgstr ""
+
+#: location.inc.php:320
+msgid "Platform"
+msgstr ""
+
+#: profile.inc.php:6
+msgid "Keystroke Dynamics por perfil"
+msgstr ""
+
+#: profile.inc.php:8
+msgid "According to the keystroke dynamics a user will be identified"
+msgstr ""
+
+#: profile.inc.php:16 profile.inc.php:77
+msgid "Comparar"
+msgstr ""
+
+#: profile.inc.php:17
+msgid "Nuevo perfil"
+msgstr ""
+
+#: profile.inc.php:60
+msgid "Ingrese el nombre del nuevo perfil"
+msgstr ""
+
+#: profile.inc.php:88
+msgid "Entrenar"
+msgstr ""
+
+#: standard.inc.php:12
+msgid "Mail"
+msgstr ""
+
+#: standard.inc.php:24
+msgid "Verify Password"
+msgstr ""
+
+#: standard.inc.php:31
+msgid "Registrar"
+msgstr ""
+
+#: standard.inc.php:61
+msgid "Please provide a valid mail"
+msgstr ""
+
+#: standard.inc.php:66
+msgid "A password is needed"
+msgstr ""
+
+#: standard.inc.php:71
+msgid "Both passwords should match"
+msgstr ""
+
+#: standard.inc.php:92
+msgid "Incorrect mail or password"
+msgstr ""
