@@ -6,35 +6,35 @@ ckd_script('keystroke.min');
 ckd_style('keystroke');
 ?><div id="contenido" class="container">
 	<div class="hero-unit">
-<h1><?=_('Demo de Keystroke Dynamics');?></h1>
+<h1>Demo de Cadencia de tecleo (Keystroke dynamics)</h1>
 		<p>
-			<?=_('This demonstration validates if the person is who he says he is');?>
+			Esta demostración valida si la persona es quien dice ser.
 		</p>
 		<form class="form-horizontal">
 			<div class="control-group">
-				<label class="control-label" for=user><?=_('User');?></label>
+				<label class="control-label" for=user>Usuario</label>
 				<div class="controls">
 					<input id="user" type='text'>
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for='pass'><?=_('Password');?></label>
+				<label class="control-label" for='pass'>Contraseña</label>
 				<div class="controls">
 					<input id="pass" type='text'>
 					<label class="checkbox">
-					<input type="checkbox" id='showpass' checked='checked'> <?=_('Show Password');?> </label>
+					<input type="checkbox" id='showpass' checked='checked'> Mostrar contraseña </label>
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for='tttr'><?=_('Use mode');?></label>
+				<label class="control-label" for='tttr'>Modo</label>
 				<div class="controls">
 					<input type='checkbox' value='run' id='tttr'>
-					<span class="help-block"><?=_("Te recomendamos usar el modo run");?></span>
+					<span class="help-block">Te recomendamos usar el modo RUN.</span>
 				</div>
 			</div>
 			<div class="control-group">
 				<div class="controls">
-					<input id='sub' type='submit' value='<?=_('Ejecutar');?>' class='btn btn-large btn-primary'>
+					<input id='sub' type='submit' value='Ejecutar' class='btn btn-large btn-primary'>
 				</div>
 			</div>
 			<script>
@@ -67,7 +67,7 @@ $(function(){
 		<p id='result' style='font-size:25px'>
 		</p>
 	</div>
-	<h1><?=_('Advanced Information');?></h1>
+	<h1>Información avanzada</h1>
 	<div id='training'>
 	</div>
-	<button id='drawtrain' class='btn'><?=_('Mostrar Entrenamiento');?></button>
+	<button id='drawtrain' class='btn'>Mostrar Entrenamiento</button>

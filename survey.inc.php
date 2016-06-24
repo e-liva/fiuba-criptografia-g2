@@ -9,9 +9,9 @@ ckd_style('datepicker');
 <div id="contenido" class="container">
 	<div class="hero-unit">
 
-		<h1><?=_('Experimento de CKD');?></h1>
+		<h1>Experimento de Cadencia de tecleo</h1>
 		<p>
-			<?=_('Muchas gracias por participar, el proceso es muy sencillo y no tomará más de 3 minutos.');?>
+			Muchas gracias por participar, el proceso es muy sencillo y no tomará más de 3 minutos.
 		</p>
 
 		<div class="progress">
@@ -23,10 +23,10 @@ ckd_style('datepicker');
 			<div id='step1'>
 
 				<div class="control-group">
-					<label class="control-label" for=name><?=_('Nombre');?></label>
+					<label class="control-label" for=name>Nombre</label>
 					<div class="controls">
 						<input data-prog='1' autocomplete="off" id="name" type='text' class='cl'>
-						<span class="help-block">Su nombre es opcional, puede dejar un apodo si lo desea o algo para que no confundamos las pruebas.</span>
+						<span class="help-block">Su nombre es opcional, puede dejar un apodo si lo desea, el objetivo es no confundir las pruebas.</span>
 					</div>
 				</div>
 
@@ -46,7 +46,7 @@ ckd_style('datepicker');
 				</div>
 
 				<div class="control-group">
-					<label class="control-label" for=fnac><?=_('Fecha de nacimiento');?></label>
+					<label class="control-label" for=fnac>Fecha de nacimiento</label>
 					<div class="controls" id='ctrlfnac'>
 
 						<div class="input-prepend class-prepend">
@@ -76,13 +76,13 @@ ckd_style('datepicker');
 			<div id='step2'>
 				<p class='datatext'>El siguiente formulario es para autentificarse en el sistema. Tipee el usuario <span class='label label-info label-user label-field' unselectable='on'>jperez@gmail.com</span> y la contraseña <span class='label label-info label-pass label-field' unselectable='on'>esta es una prueba 576</span>. <span class='count'>Tip: Utilice tab para pasar de campo.</span></p>
 				<div class="control-group">
-					<label class="control-label" for=user><?=_('User');?></label>
+					<label class="control-label" for=user>Usuario</label>
 					<div class="controls">
 						<input autocomplete="off" id="user" type='text' class='listen'>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for='pass'><?=_('Password');?></label>
+					<label class="control-label" for='pass'>Contraseña</label>
 					<div class="controls">
 						<input autocomplete="off" id="pass" type='text' class='listen'>
 					</div>
@@ -94,7 +94,7 @@ ckd_style('datepicker');
 				<p>¡Muchas gracias por participar del experimento!</p>
 				<p>Si querés recibir una copia del estudio que se realizará con esta información dejanos tu correo electrónico. <b>Esto es solo por si tenés curiosidad</b>, no es obligatorio.</p>
 				<div class="control-group">
-					<label class="control-label" for=mail><?=_('Mail');?></label>
+					<label class="control-label" for=mail>E-mail</label>
 					<div class="controls">
 						<input id="mail" type='text' class='cl'>
 					</div>
@@ -104,7 +104,7 @@ ckd_style('datepicker');
 
 			<div class="control-group">
 				<div class="controls">
-					<input type='submit' class='btn btn-large btn-primary' id='next' value='<?=_('Continuar');?>'>
+					<input type='submit' class='btn btn-large btn-primary' id='next' value='Continuar'>
 				</div>
 			</div>
 		</form>

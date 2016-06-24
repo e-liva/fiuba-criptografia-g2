@@ -151,7 +151,7 @@ function cAPI(attr_mode) {
 	}
 	this['run']=function(callback) {
 		if (attr_mode()=='train') {
-			callback("Training... click <span class='label label-info'>run</span> to test");
+			callback("Entrenando... Haga click en modo <span class='label label-info'>RUN</span> para probar");
 		} else if (this.trained) {
 			callback(textCompare());
 			this.data={};
@@ -162,7 +162,7 @@ function cAPI(attr_mode) {
 	}
 	this['match']=function(callback) {
 		if (attr_mode()=='train') {
-			callback("Training... click <span class='label label-info'>run</span> to test");
+			callback("Entrenando... Haga click en modo <span class='label label-info'>RUN</span> para probar");
 		} else {
 			var winner=null,ammount=200;
 			for (var profile in this.profiles) {
@@ -234,7 +234,7 @@ function cAPI(attr_mode) {
 
 	function textCompare(){
 		var r=compare(self.data,self.trained);
-		if (r==undefined) return "Not enough training";
+		if (r==undefined) return "No se entrenó lo suficiente";
 		return "Result: "+calculatePercent(r);
 	}
 

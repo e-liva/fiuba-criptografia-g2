@@ -93,3 +93,11 @@
   font-style: italic;
   font-size: 11pt;
 }
+
+.navig i {
+  margin-top: 8px;
+}
+
+p#result span {
+  vertical-align: middle;
+}

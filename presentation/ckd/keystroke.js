@@ -151,18 +151,18 @@ function cAPI(attr_mode) {
 	}
 	this['run']=function(callback) {
 		if (attr_mode()=='train') {
-			callback("Training... click <span class='label label-info'>run</span> to test");
+			callback("Entrenando... Elija modo <span class='label label-info'>RUN</span> para probar.");
 		} else if (this.trained) {
 			callback(textCompare());
 			this.data={};
 		} else {
-			callback("Please train first");
+			callback("Por favor, entrénelo primero.");
 		}
 		clearForm();
 	}
 	this['match']=function(callback) {
 		if (attr_mode()=='train') {
-			callback("Training... click <span class='label label-info'>run</span> to test");
+			callback("Entrenando... Elija modo <span class='label label-info'>RUN</span> para probar.");
 		} else {
 			var winner=null,ammount=200;
 			for (var profile in this.profiles) {
@@ -196,7 +196,7 @@ function cAPI(attr_mode) {
 			out+='<tr><td>'+i+'</td><td>'+train.join(', ')+'</td><td>'+train.length+'</td><td>'+mean+'</td><td>'+variance+'</td><td>'+expected+'</td></tr>';
 		}
 		out+='</tr></table>';
-		if (empty) out='<p>Please train it first</p>';
+		if (empty) out='<p>Por favor, entrénelo primero.</p>';
 		$t['html'](out+"<p>"+this['getTrain']().join(', ')+"</p>");
 	}
 

@@ -9,9 +9,9 @@ ckd_style('bootstrap-editable');
 <div id="contenido" class="container">
 	<div class="hero-unit">
 
-		<h1><?=_('Demo de API de Keystroke Dynamics');?></h1>
+		<h1>Demo de API de Cadencia de tecleo (Keystroke dynamics)</h1>
 		<p>
-			<?=_('According to the keystroke dynamics...');?>
+			De acuerdo a la cadencia de tecleo...
 		</p>
 
 
@@ -22,10 +22,10 @@ ckd_style('bootstrap-editable');
 
 
 <ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#tfree"><?=_('Free text');?></a></li>
-  <li><a href="#tlogin"><?=_('Login Form');?></a></li>
-  <li><a href="#tother"><?=_('Other Form');?></a></li>
-  <li><a href="#tcaptcha"><?=_('Captcha');?></a></li>
+  <li class="active"><a href="#tfree">Texto libre</a></li>
+  <li><a href="#tlogin">Formulario de <em>login</em></a></li>
+  <li><a href="#tother">Otro formulario</a></li>
+  <li><a href="#tcaptcha">Captcha</a></li>
 </ul>
  
 <div class="tab-content">
@@ -33,14 +33,14 @@ ckd_style('bootstrap-editable');
 
 		<form class="form-horizontal">
 			<div class="control-group">
-				<label class="control-label" for='freetext'><?=_('Free text');?></label>
+				<label class="control-label" for='freetext'>Texto libre</label>
 				<div class="controls">
 					<textarea id='freetext'></textarea>
 				</div>
 			</div>
 			<div class="control-group">
 				<div class="controls">
-					<button class='btn btn-large btn-primary subm' id='tfreesubmit'><?=_('Probar resultados');?></button>
+					<button class='btn btn-large btn-primary subm' id='tfreesubmit'>Probar resultados</button>
 				</div>
 			</div>
 		</form>
@@ -50,17 +50,17 @@ ckd_style('bootstrap-editable');
 
 		<form class="form-horizontal">
 			<div class="control-group">
-				<label class="control-label" for=user><?=_('User');?></label>
+				<label class="control-label" for=user>Usuario</label>
 				<div class="controls">
 					<input autocomplete="off" id="user" type='text' class='cl'>
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for='pass'><?=_('Password');?></label>
+				<label class="control-label" for='pass'>Contraseña</label>
 				<div class="controls">
 					<input autocomplete="off" id="pass" type='text' class='cl'>
 					<label class="checkbox">
-					<input type="checkbox" id='showpass' checked='checked'> <?=_('Show Password');?> </label>
+					<input type="checkbox" id='showpass' checked='checked'> Mostrar contraseña </label>
 				</div>
 			</div>
 			<div class="control-group">
@@ -73,10 +73,10 @@ ckd_style('bootstrap-editable');
 
 	</div>
   <div class="tab-pane" id="tother">
-		<p><?=_('This place is available for the custom forms your company wants to add.');?></p>
+		<p>Este lugar está disponible para los formularios que tu compañía quiera agregar.</p>
 	</div>
   <div class="tab-pane" id="tcaptcha">
-		<p><?=_('Coming soon: Solve the captcha!');?></p>
+		<p>Próximamente: Resuelve el captcha!</p>
 	</div>
 </div>
  
@@ -103,7 +103,7 @@ $(function(){
 
 
 <section class='special' id='datatable'>
-<h2>Information retrieved</h2>
+<h2>Información obtenida</h2>
 
 <p id='nfo'></p>
 

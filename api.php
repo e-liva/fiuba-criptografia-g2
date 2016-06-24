@@ -1,6 +1,6 @@
-<?
+<?php
 
-//Cloodie Keystroke Dynamics
+// Keystroke Dynamics
 
 class CKD {
 	private $dbconn;
@@ -154,3 +154,4 @@ group by id_entity
 	
 
 }
+?>

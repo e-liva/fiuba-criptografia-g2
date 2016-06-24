@@ -4,9 +4,9 @@ ckd_script('keystroke.min');
 ckd_style('keystroke');
 ?><div id="contenido" class="container">
 	<div class="hero-unit">
-<h1><?=_('Keystroke Dynamics por perfil');?></h1>
+<h1>Cadencia de tecleo por perfil</h1>
 		<p>
-			<?=_('According to the keystroke dynamics a user will be identified');?>
+			Un usuario será identificado de acuerdo a la cadencia de tecleo.
 		</p>
 <div class='container'>
 <div class='row'>
@@ -14,8 +14,8 @@ ckd_style('keystroke');
 
 <div class="navig">
 	<ul class="nav nav-list">
-		<li class='disabled'><a href="#" id='startrun'><i class="icon-repeat"></i> <?=_('Comparar');?></a></li>
-		<li><a href="#" id='addprofile'><i class="icon-plus-sign"></i> <?=_('Nuevo perfil');?></a></li>
+		<li class='disabled'><a href="#" id='startrun'><i class="icon-repeat"></i> Comparar</a></li>
+		<li><a href="#" id='addprofile'><i class="icon-plus-sign"></i> Nuevo perfil</a></li>
 	</ul>
 </div>
 
@@ -23,17 +23,17 @@ ckd_style('keystroke');
 <div class='span8 subf'>
 		<form class="form-horizontal">
 			<div class="control-group">
-				<label class="control-label" for=user><?=_('User');?></label>
+				<label class="control-label" for=user>Usuario</label>
 				<div class="controls">
 					<input id="user" type='text'>
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for='pass'><?=_('Password');?></label>
+				<label class="control-label" for='pass'>Contraseña</label>
 				<div class="controls">
 					<input id="pass" type='text'>
 					<label class="checkbox">
-					<input type="checkbox" id='showpass' checked='checked'> <?=_('Show Password');?> </label>
+					<input type="checkbox" id='showpass' checked='checked'> Mostrar contraseña </label>
 				</div>
 			</div>
 			<div class="control-group">
@@ -58,7 +58,7 @@ $(function(){
 	}
 
 	$('#addprofile').click(function(){
-		var prof=window.prompt("<?=_('Ingrese el nombre del nuevo perfil');?>","");
+		var prof=window.prompt("Ingrese el nombre del nuevo perfil","");
 		$('.nav-list li').removeClass('active');
 		$('<li class="active"><a href="#" id="add_profile" data-profile="'+prof+'"><i class="icon-user"></i> '+prof+'</a></li>').insertBefore($('#addprofile').parent());
 		change();
@@ -75,7 +75,7 @@ $(function(){
 		$this.parent().addClass('active');
 		change();
 		train(null);
-		$('#sub').val('<?=_('Comparar');?>');
+		$('#sub').val('Comparar');
 		$('#user').focus();
 		return false;
 	});
@@ -86,7 +86,7 @@ $(function(){
 		change();
 		train($(this).data('profile'));
 		$('.subf').show();
-		$('#sub').val('<?=_('Entrenar');?>');
+		$('#sub').val('Entrenar');
 		$('#user').focus();
 		return false;
 	});
@@ -115,7 +115,7 @@ $(function(){
 		<p id='result' style='font-size:25px'>
 		</p>
 	</div>
-	<h1><?=_('Advanced Information');?></h1>
+	<h1>Información avanzada</h1>
 	<div id='training'>
 	</div>
-	<button id='drawtrain' class='btn'><?=_('Mostrar Entrenamiento');?></button>
+	<button id='drawtrain' class='btn'>Mostrar entrenamiento</button>

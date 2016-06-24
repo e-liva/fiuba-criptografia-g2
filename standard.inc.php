@@ -4,32 +4,32 @@ ckd_script('keystroke.min');
 ckd_style('keystroke');
 ?><div id="contenido" class="container">
 	<div class="hero-unit">
-		<h1><?=_('Demo de Keystroke Dynamics');?></h1>
+		<h1>Demo de Cadencia de tecleo (Keystroke dynamics)</h1>
 		<p>
-			<?=_('This demonstration validates if the person is who he says he is');?>
+			Esta demostración valida si la persona es quien dice ser.
 		</p>
 		<form class="form-horizontal" autocomplete="off">
 			<div class="control-group">
-				<label class="control-label" for=mail><?=_('Mail');?></label>
+				<label class="control-label" for=mail>E-mail</label>
 				<div class="controls">
 					<input id="mail" type='text' autocomplete="off">
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for='pass1'><?=_('Password');?></label>
+				<label class="control-label" for='pass1'>Contraseña</label>
 				<div class="controls">
 					<input id="pass1" type='password'>
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for='pass2'><?=_('Verify Password');?></label>
+				<label class="control-label" for='pass2'>Verificar contraseña</label>
 				<div class="controls">
 					<input id="pass2" type='password'>
 				</div>
 			</div>
 			<div class="control-group">
 				<div class="controls">
-					<input id='sub' type='submit' value="<?=_('Registrar');?>" class='btn btn-large btn-primary'>
+					<input id='sub' type='submit' value="Registrar" class='btn btn-large btn-primary'>
 				</div>
 			</div>
 			<script>
@@ -59,17 +59,17 @@ $(function(){
 		$f.find('span.help-inline').remove();
 		if (!$mail.val().match(/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/)) {
 			$mail.closest('.control-group').addClass('warning');
-			$mail.after('<span class="help-inline"><?=_('Please provide a valid mail');?></span>');
+			$mail.after('<span class="help-inline">Por favor ingrese un E-mail válido</span>');
 			result=false;
 		}
 		if ($pass1.val()=='') {
 			$pass1.closest('.control-group').addClass('warning');
-			$pass1.after('<span class="help-inline"><?=_('A password is needed');?></span>');
+			$pass1.after('<span class="help-inline">Se requiere una contraseña</span>');
 			result=false;
 		}
 		if ($pass1.val()!=$pass2.val()) {
 			$pass2.closest('.control-group').addClass('warning');
-			$pass2.after('<span class="help-inline"><?=_('Both passwords should match');?></span>');
+			$pass2.after('<span class="help-inline">Las contraseñas deben coincidir</span>');
 			result=false;
 		}
 		return result;
@@ -86,11 +86,11 @@ $(function(){
 			pass=$('#pass1').val();
 			clean();
 			$('#pass2').closest('.control-group').remove();
-			$(this).val('<?=_('Ingresar');?>');
+			$(this).val('Ingresar');
 			break;
 		case 'run':
 			if (mail!=$('#mail').val() || pass!=$('#pass1').val()) {
-				$('#result').html("<?=_('Incorrect mail or password');?>");
+				$('#result').html("E-mail o contraseña incorrectos");
 			} else {
 				clean();
 				keystroke.run(function(text){
@@ -112,8 +112,8 @@ $(function(){
 		<p id='result' style='font-size:25px'>
 		</p>
 	</div>
-	<h1><?=_('Advanced Information');?></h1>
+	<h1>Información avanzada</h1>
 	<div id='training'>
 	</div>
-	<button id='drawtrain' class='btn'><?=_('Mostrar Entrenamiento');?></button>
+	<button id='drawtrain' class='btn'>Mostrar entrenamiento</button>
 

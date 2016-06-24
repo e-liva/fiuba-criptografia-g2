@@ -12,9 +12,9 @@ $api=new CKD('apikey');
 <div id="contenido" class="container">
 	<div class="hero-unit">
 
-		<h1><?=_('Demo de API de Keystroke Dynamics');?></h1>
+		<h1>Demo de API de Cadencia de tecleo (Keystroke dynamics)</h1>
 		<p>
-			<?=_('According to the keystroke dynamics...');?>
+			De acuerdo a la cadencia de tecleo...
 		</p>
 
 
@@ -26,10 +26,10 @@ $api=new CKD('apikey');
 
 
 <ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#tfree"><?=_('Free text');?></a></li>
-  <li><a href="#tlogin"><?=_('Login Form');?></a></li>
-  <li><a href="#tother"><?=_('Other Form');?></a></li>
-  <li><a href="#tcaptcha"><?=_('Captcha');?></a></li>
+  <li class="active"><a href="#tfree">Texto libre</a></li>
+  <li><a href="#tlogin">Formulario de <em>login</em></a></li>
+  <li><a href="#tother">Otro formulario</a></li>
+  <li><a href="#tcaptcha">Captcha</a></li>
 </ul>
  
 <div class="tab-content">
@@ -37,14 +37,14 @@ $api=new CKD('apikey');
 
 		<form class="form-horizontal">
 			<div class="control-group">
-				<label class="control-label" for='freetext'><?=_('Free text');?></label>
+				<label class="control-label" for='freetext'>Texto libre</label>
 				<div class="controls">
 					<textarea id='freetext'></textarea>
 				</div>
 			</div>
 			<div class="control-group">
 				<div class="controls">
-					<button class='btn btn-large btn-primary subm' id='tfreesubmit'><?=_('Probar resultados');?></button>
+					<button class='btn btn-large btn-primary subm' id='tfreesubmit'>Probar resultados</button>
 				</div>
 			</div>
 		</form>
@@ -54,17 +54,17 @@ $api=new CKD('apikey');
 
 		<form class="form-horizontal">
 			<div class="control-group">
-				<label class="control-label" for=user><?=_('User');?></label>
+				<label class="control-label" for=user>Usuario</label>
 				<div class="controls">
 					<input autocomplete="off" id="user" type='text' class='cl'>
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for='pass'><?=_('Password');?></label>
+				<label class="control-label" for='pass'>Contraseña</label>
 				<div class="controls">
 					<input autocomplete="off" id="pass" type='text' class='cl'>
 					<label class="checkbox">
-					<input type="checkbox" id='showpass' checked='checked'> <?=_('Show Password');?> </label>
+					<input type="checkbox" id='showpass' checked='checked'> Mostrar contraseña </label>
 				</div>
 			</div>
 			<div class="control-group">
@@ -77,10 +77,10 @@ $api=new CKD('apikey');
 
 	</div>
   <div class="tab-pane" id="tother">
-		<p><?=_('This place is available for custom forms your company wants to add.');?></p>
+		<p>Este lugar está disponible para los formularios que tu compañía quiera agregar.</p>
 	</div>
   <div class="tab-pane" id="tcaptcha">
-		<p><?=_('Comming soon: Solve the captcha!');?></p>
+		<p>Próximamente: Resuelve el captcha!</p>
 	</div>
 </div>
  
@@ -102,11 +102,11 @@ $(function(){
 
 	function test() {
 		var keystroke=api.get();
-		newData('<?=_('Cadencia');?>',keystroke);
+		newData('Cadencia',keystroke);
 
 		$('.subm').attr('disabled','disabled');
-		$("#tfreesubmit").text('<?=_('Simulando prueba...');?>');
-		$("#tloginsubmit").val('<?=_('Simulando ingreso...');?>');
+		$("#tfreesubmit").text('Simulando prueba...');
+		$("#tloginsubmit").val('Simulando ingreso...');
 
 		$.ajax({
 			url: 'ajax.php?op=check',
@@ -114,8 +114,8 @@ $(function(){
 			data: 'k='+keystroke,
 			success: function(data){
 				$('.subm').removeAttr('disabled');
-				$("#tfreesubmit").text('<?=_('Probar Resultados');?>');
-				$("#tloginsubmit").val('<?=_('Ingresar');?>');
+				$("#tfreesubmit").text('Probar resultados');
+				$("#tloginsubmit").val('Ingresar');
 			}
 	 	 });
 		
@@ -171,7 +171,7 @@ $(function(){
 		}
 		$this.editable({
 			url: 'ajax.php?op=train',
-			title: '<?=_('Enter value');?>',
+			title: 'Ingresar valor',
 			placement: 'left',
 			source:source,
 			params: function(params) {
@@ -205,7 +205,7 @@ $(function(){
 <section class='special' id='dims'>
 <h2>Dimensions</h2>
 <table class='table' id='dimensions'>
-<tr><th><?=_('Dimension');?></th><th><?=_('Value');?></th></tr>
+<tr><th>Dimensión</th><th>Valor</th></tr>
 <?
 $dimensions=$api->listDimensions();
 
@@ -243,7 +243,7 @@ switch($dim['form']) {
 <section class='special' id='datatable'>
 <h2>Information table</h2>
 <table class='table' id='data'>
-<tr><th><?=_('Attribute');?></th><th><?=_('Value');?></th></tr>
+<tr><th>Atributo</th><th>Valor</th></tr>
 </table>
 </section>
 
@@ -308,17 +308,17 @@ function success(position) {
 if (navigator.geolocation) {
 	navigator.geolocation.getCurrentPosition(success);
 } else {
-	newData("<?=_('Geo location support');?>","<?=_('Not available');?>");
+	newData("Soporte para geolocalización","No disponible");
 }
 
 var b=new browscap('browscap.ini');
 
 b.getBrowser(navigator.userAgent,function(browser){
 	var browser2={
-		'Browser':'<?=_('Browser');?>',
-		'Version':'<?=_('Version');?>',
-		'Device_Name':'<?=_('Device');?>',
-		'Platform':'<?=_('Platform');?>'
+		'Browser':'Browser',
+		'Version':'Version',
+		'Device_Name':'Device',
+		'Platform':'Platform'
 	};
 
 	for (var i in browser2) {
