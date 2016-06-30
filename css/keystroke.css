@@ -95,7 +95,8 @@
 }
 
 .navig i {
-  margin-top: 8px;
+  margin-bottom: 3px;
+  vertical-align: middle;
 }
 
 p#result span {
